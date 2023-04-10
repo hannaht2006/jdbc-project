@@ -9,12 +9,12 @@ select * from EMPLOYEES;
  -sum --> it will total value
  -avg -->it will average value
 
- aggreate function takes multi row and return one result
-  all aggreate function will ignore null value
+ aggregate function takes multi row and return one result
+  all aggregate function will ignore null value
 
 
  */
--- how many depatments we have?
+-- how many departments we have?
 select count(*) from DEPARTMENTS;
 
 --how many locations we have?
@@ -36,8 +36,14 @@ where DEPARTMENT_ID is null;-->0 because no value in department ID; she is Kimbe
 select count(*)from EMPLOYEES
 where DEPARTMENT_ID is not null;
 
-select count(DEPARTMENT_ID)from EMPLOYEES
-where DEPARTMENT_ID is not null;
+select DEPARTMENT_ID, count(DEPARTMENT_ID)from EMPLOYEES
+where DEPARTMENT_ID is not null
+group by DEPARTMENT_ID
+having count(DEPARTMENT_ID)>1;
+
+select DEPARTMENT_ID, count(*) from EMPLOYEES
+    group by DEPARTMENT_ID
+having count(*)>5;
 
 
 -- how many different firstname we have?
@@ -47,7 +53,10 @@ select count( distinct FIRST_NAME) from EMPLOYEES;
 select count(*) from EMPLOYEES
 where JOB_ID in('IT_PROG', 'SA_REP');
 
---how many employess getting salary more than 6000
+Select count(*) from employees
+where job_id = 'IT_PROG';
+
+--how many employees getting salary more than 6000
 select count(*) from EMPLOYEES
 where SALARY>6000; -->55
 

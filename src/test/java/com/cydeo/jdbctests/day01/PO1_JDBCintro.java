@@ -1,4 +1,4 @@
-package com.cydeo.jdbctests;
+package com.cydeo.jdbctests.day01;
 
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +21,7 @@ public class PO1_JDBCintro {
     @Test
     public void task1() throws SQLException {
 
-        // DriverManager Class getConnection method will help to connect database
+        // DriverManager Class has getConnection method will help to connect database
         Connection conn = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
 
         // It helps us to execute queries

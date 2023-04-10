@@ -6,7 +6,7 @@ public class TestOracleConnection {
 
     public static void main(String[] args) throws SQLException {
 
-        String dbURL = "jdbc:oracle:thin:@34.227.149.74:1521:XE";
+        String dbURL = "jdbc:oracle:thin:@3.80.111.193:1521:XE";
 
         String dbUserName ="hr";
 
@@ -50,7 +50,7 @@ rs.next();
         System.out.println(rs.getInt(1)); //return integer :1
         System.out.println(rs.getString(1)); //returns String : 1
 
- //rs.getInt(columnlable)
+ //rs.getInt(columnLabel)
         System.out.println(rs.getInt("region_ID"));
         System.out.println(rs.getString("region_ID"));
 //get me Europe
@@ -80,7 +80,7 @@ rs.next();
         System.out.println(rs.getString("region_ID")+" |"+ rs.getString("region_Name"));
 
         //what if we have 1000 lines?? --> loop
-  rs.beforeFirst();
+        // rs.beforeFirst();
 
         while(rs.next()){
             System.out.println("______________");

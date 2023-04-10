@@ -1,4 +1,4 @@
-package com.cydeo.jdbctests;
+package com.cydeo.jdbctests.day01;
 
 import org.junit.jupiter.api.Test;
 
@@ -36,7 +36,7 @@ public class PO2_FlexibleNavigation {
 
         /*
         ResultSet.TYPE_SCROLL_INSENSITIVE --> to do flexible navigation between rows
-        ResultSet.CONCUR_READ_ONLY        --> To dont update anything from database
+        ResultSet.CONCUR_READ_ONLY        --> To don't update anything from database
          */
 
         // What if I want to get last data

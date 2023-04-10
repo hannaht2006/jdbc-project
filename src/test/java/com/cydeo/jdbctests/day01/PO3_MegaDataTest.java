@@ -1,4 +1,4 @@
-package com.cydeo.jdbctests;
+package com.cydeo.jdbctests.day01;
 
 import org.junit.jupiter.api.Test;
 
@@ -44,7 +44,7 @@ public class PO3_MegaDataTest {
         //get me column name from index 1
         System.out.println(rsmd.getColumnName(1));
 
-        //get me column name from index 3
+        //get me column name from index 2
         System.out.println(rsmd.getColumnName(2));
 
         //it will return provided columnIndex name
@@ -61,9 +61,9 @@ public class PO3_MegaDataTest {
                    rs.next() --> to iterate each row dynamicly
                    rs.getString(index)     --> to get data from specified column
                    rs.getString(ColumnName)
-            ResultSetMetaData --> it holds table infor (columnNames - ColumnCount)
+            ResultSetMetaData --> it holds table info (columnNames - ColumnCount)
                    rsmd.getColumnCount() ---> will give how many column we have
-                   rsmd.getColumnName()  ---> it will give spesified columnName
+                   rsmd.getColumnName()  ---> it will give specified columnName
          */
 
 

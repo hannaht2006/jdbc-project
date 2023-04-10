@@ -24,7 +24,7 @@ select FIRST_NAME, SALARY*12 as annual_salary from EMPLOYEES;
  String functions
  --concat
 
- --JAva firstname + " " + lastname
+ --Java: firstname + " " + lastname
  --sql: || --> firstname || ' ' || lastname
 
 
